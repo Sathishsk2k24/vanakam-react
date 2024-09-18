@@ -1,0 +1,25 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "this is react by sathish",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sathishsk2k24/vanakam-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "sathish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sathishsk2k24/vanakam-react/issues"
+  },
+  "homepage": "https://github.com/Sathishsk2k24/vanakam-react#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
