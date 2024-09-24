@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "this is react by sathish",
   "scripts": {
+    "start": "parcel index.html",
+    "prod": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
