@@ -47,6 +47,31 @@ body{
 }
 
 .filter-btn {
-    margin: 20px 0px;
+    margin: 10px 0px;
     cursor: pointer;
+}
+
+.shimmer-card {
+    background-color: #f0f0f0;
+    height: 400px;
+    width: 200px;
+    margin: 20px;
+}
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-login {
+    height: 30px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+}
+.search{
+    margin: 0px 10px;
+}
+.filter-container {
+    display: flex;
 }
