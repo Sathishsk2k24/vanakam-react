@@ -1,6 +1,7 @@
 import RestComp from "./ResComp";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const BodyComp = () =>{
     const [listOfRes, setListOfRes] = useState([]);
@@ -38,7 +39,7 @@ const BodyComp = () =>{
             <div className="restro-container" >
                 {
                     filteredRes.map((res)=>{
-                        return <RestComp key= {res.info.id} resDetails= {res}/>
+                        return <Link key= {res.info.id} to={"/restaraunt/"+res.info.id}><RestComp  resDetails= {res}/></Link>
                     })
                 }
             </div>
