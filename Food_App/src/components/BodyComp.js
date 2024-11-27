@@ -2,11 +2,13 @@ import RestComp from "./ResComp";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const BodyComp = () =>{
     const [listOfRes, setListOfRes] = useState([]);
     const [filteredRes, setFilteredRes] = useState([]);
     const [searchText, setSearchText] = useState("");
+    const onlineStatus = useOnlineStatus();
 
     useEffect(()=>{
         fetchData();
@@ -20,6 +22,8 @@ const BodyComp = () =>{
     };
 
 //conditional rendering
+    if(!onlineStatus) 
+        return <div><h1>You're Offline, please check your internet connection!</h1></div>
     return listOfRes.length === 0 ? <Shimmer/> : (
         <div className="body">
             <div className="filter-container">

@@ -15,6 +15,14 @@ class UserClass extends React.Component {
             name: json.login
         })
     }
+
+    componentDidUpdate(){
+        console.log("Called from component did update")
+    }
+
+    componentWillUnmount(){
+        console.log("Called from component will unmount")
+    }
     render() {
         const {name } = this.state;
         return (<div className="user-container">
